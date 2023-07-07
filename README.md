@@ -1,73 +1,56 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Project Title
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## NestJS Coffee API
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This repository contains a fully-featured API developed using NestJS framework. The API demonstrates common features and best practices when using NestJS for building efficient, reliable and scalable server-side applications.
 
-## Installation
+## Features
+
+1. The API provides features to create, read, update, and delete coffee resources, demonstrating how to implement standard CRUD operations in a RESTful API using NestJS. Here are some highlights:
+
+2. Controllers and Providers: Demonstrates the usage of controllers and providers in NestJS, which are fundamental building blocks of a NestJS app.
+
+3. Middleware: Demonstrates how to use middleware for handling the processing of requests and responses.
+
+4. Exception Filters: Implements custom exception handling using filters.
+
+5. Pipes: Uses validation pipes for validating incoming requests.
+
+6. Interceptors: Demonstrates the usage of interceptors to transform the data being returned from route handlers.
+
+7. Guards: Implements guards for handling authorization.
+
+8. Swagger API Documentation: The API is fully documented with Swagger OpenAPI.
+
+9. TypeORM and PostgreSQL: Uses TypeORM for handling database operations and PostgreSQL as the database.
+
+10. Entity Relationships: Demonstrates the usage of TypeORM for managing entity relationships (ManyToMany, OneToMany etc.).
+
+## Used technologies
+
+1. NestJS
+2. TypeORM
+3. PostgreSQL
+4. Swagger
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies with npm install
+3. Start your Postgres database
+4. Run the API with npm run start
+
+Navigate to `http://localhost:3000/api` to view the Swagger API documentation.
+
+### Environment Variables
 
 ```bash
-$ npm install
+DATABASE_USER=Your database user name
+DATABASE_PASSWORD=Your database password
+DATABASE_NAME=Your database
+DATABASE_PORT=Your database port
+DATABASE_HOST=Your database host
+API_KEY=An API key for secure endpoints.
 ```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
